@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wotingFrame</class>
+ <widget class="QFrame" name="wotingFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>881</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame:addmember{
+border:none;
+}
+QLabel {
+
+    background-color: #E6D7FA;
+    color: #653C87;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    border: 2px solid #653C87;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLabel:hover {
+    background-color: #D4C2EF;  /* Slightly darker background on hover */
+    border-color: #553075;  /* Darker border on hover */
+}
+
+QLineEdit {
+    border: 2px solid #9A79BA;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #653C87;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLineEdit:hover {
+    background-color: #F5F0FA;  /* Slightly lighter background on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #653C87;  /* Darker border on focus */
+    background-color: #F5F5F5;  /* Slightly lighter background on focus */
+}
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>54</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_4">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>58</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Verdana</family>
+             <pointsize>20</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+background:none;
+font: 700 20pt &quot;Verdana&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Voting</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignLeft">
+       <widget class="QFrame" name="frame_3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="horizontalSpacing">
+          <number>51</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="maximumSize">
+            <size>
+             <width>118</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #653C87; /* Dark purple background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid #9A79BA; /* Light purple border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #9A79BA; /* Light purple background on hover */
+    border-color: #653C87; /* Dark purple border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6D7FA; /* Lightest purple background on press */
+    border-color: #553075; /* Darker purple border on press */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Add voting</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="maximumSize">
+            <size>
+             <width>121</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #653C87; /* Dark purple background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid #9A79BA; /* Light purple border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #9A79BA; /* Light purple background on hover */
+    border-color: #653C87; /* Dark purple border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6D7FA; /* Lightest purple background on press */
+    border-color: #553075; /* Darker purple border on press */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Start Voting</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Date of Voting</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Subject of Voting</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="maximumSize">
+            <size>
+             <width>92</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #653C87; /* Dark purple background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid #9A79BA; /* Light purple border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #9A79BA; /* Light purple background on hover */
+    border-color: #653C87; /* Dark purple border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6D7FA; /* Lightest purple background on press */
+    border-color: #553075; /* Darker purple border on press */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Submit</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDateEdit" name="dateEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDateEdit {
+    border: 2px solid #9A79BA;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #653C87;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QDateEdit:hover {
+    background-color: #F5F0FA;  /* Slightly lighter background on hover */
+}
+
+QDateEdit:focus {
+    border: 2px solid #653C87;  /* Darker border on focus */
+    background-color: #F5F5F5;  /* Slightly lighter background on focus */
+}</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_8">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>178878</width>
+          <height>380</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+border: 2px solid #000;  /* Adds a 2px solid black border */
+    border-radius: 0px;     /* Optional: Adds rounded corners */
+    background-color: #9A79BA;  /* Optional: Adds a background color */
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background-color: #ffffff; /* White background */
+    border: 2px solid black; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    border-color: #3e8e41; /* Darker green border on hover */
+    color: #000000; /* Black text color on hover */
+}
+
+QLineEdit {
+    background-color: #ffffff; /* White background */
+    border: 2px solid black; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+QLineEdit:focus {
+    border-color: gray; /* Darker green border on focus */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    border: 1px solid #888888; /* Green border for the table */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: 'Arial', sans-serif; /* Font for the table cells */
+    font-size: 14px; /* Font size for the table cells */
+}
+
+QTableWidget::item {
+    border: 1px solid #888888; /* Grey border for each cell */
+    padding: 5px; /* Padding inside each cell */
+    margin: px; /* Margin between cells */
+    font-family: 'Arial', sans-serif; /* Font for the table cells */
+    font-size: 14px; /* Font size for the table cells */
+}
+
+QHeaderView::section {
+    background-color: #757575; /* Green header background */
+    color: white; /* White text in the header */
+    padding: 4px; /* Padding in header cells */
+    border: 1px solid #dddddd; /* Border for header cells */
+    font-family: 'Verdana', sans-serif; /* Font for the header */
+    font-size: 16px; /* Font size for the header */
+    font-weight: bold; /* Bold font for the header */
+
+}
+            QScrollBar:vertical {
+                
+                background: #653C87;
+                
+         
+            }
+
+</string>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="midLineWidth">
+            <number>0</number>
+           </property>
+           <property name="autoScrollMargin">
+            <number>16</number>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideRight</enum>
+           </property>
+           <property name="showGrid">
+            <bool>false</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="rowCount">
+            <number>2</number>
+           </property>
+           <property name="columnCount">
+            <number>6</number>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>21</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>102</number>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderMinimumSectionSize">
+            <number>22</number>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>32</number>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>112</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>id</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>subject of voting</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>date of voting</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>yes</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>no</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>cnd</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>1</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>rahul</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

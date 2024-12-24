@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_8">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame_5">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="leftMargin">
+       <number>44</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>70</number>
+      </property>
+      <item alignment="Qt::AlignRight">
+       <widget class="QFrame" name="frame_4">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame:addmember{
+border:none;
+}
+QLabel {
+
+    background-color: #E6D7FA;
+    color: #653C87;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    border: 2px solid #653C87;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLabel:hover {
+    background-color: #D4C2EF;  /* Slightly darker background on hover */
+    border-color: #553075;  /* Darker border on hover */
+}
+
+QLineEdit {
+    border: 2px solid #9A79BA;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #653C87;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLineEdit:hover {
+    background-color: #F5F0FA;  /* Slightly lighter background on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #653C87;  /* Darker border on focus */
+    background-color: #F5F5F5;  /* Slightly lighter background on focus */
+}
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="topMargin">
+          <number>23</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QFrame" name="frame_2">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item row="0" column="0" alignment="Qt::AlignHCenter">
+             <widget class="QLabel" name="labelheading">
+              <property name="styleSheet">
+               <string notr="true">#labelheading{
+	font: 700 30pt &quot;Segoe UI&quot;;
+background:none;
+border:none;
+	
+}</string>
+              </property>
+              <property name="text">
+               <string>Bankrupt</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QFrame" name="frame_7">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame_11">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>62</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_17">
+                 <property name="minimumSize">
+                  <size>
+                   <width>142</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Username</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="frame_9">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>62</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>142</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Aadharnumber</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>387</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QFrame" name="fframe_6">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>93</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #653C87; /* Dark purple background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid #9A79BA; /* Light purple border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #9A79BA; /* Light purple background on hover */
+    border-color: #653C87; /* Dark purple border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6D7FA; /* Lightest purple background on press */
+    border-color: #553075; /* Darker purple border on press */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #653C87; /* Dark purple background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid #9A79BA; /* Light purple border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #9A79BA; /* Light purple background on hover */
+    border-color: #653C87; /* Dark purple border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6D7FA; /* Lightest purple background on press */
+    border-color: #553075; /* Darker purple border on press */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Delete</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_8">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+border: 2px solid #000;  /* Adds a 2px solid black border */
+    border-radius: 0px;     /* Optional: Adds rounded corners */
+    background-color: #653C87;  /* Optional: Adds a background color */
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background-color: #ffffff; /* White background */
+    border: 2px solid black; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    border-color: #3e8e41; /* Darker green border on hover */
+    color: #000000; /* Black text color on hover */
+}
+
+QLineEdit {
+    background-color: #ffffff; /* White background */
+    border: 2px solid black; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+QLineEdit:focus {
+    border-color: gray; /* Darker green border on focus */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QTableWidget" name="tableWidget_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    border: 1px solid #888888; /* Green border for the table */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: 'Arial', sans-serif; /* Font for the table cells */
+    font-size: 14px; /* Font size for the table cells */
+}
+
+QTableWidget::item {
+    border: 1px solid #888888; /* Grey border for each cell */
+    padding: 5px; /* Padding inside each cell */
+    margin: 1px; /* Margin between cells */
+    font-family: 'Arial', sans-serif; /* Font for the table cells */
+    font-size: 14px; /* Font size for the table cells */
+}
+
+QHeaderView::section {
+    background-color: #A8A2AB; /* Green header background */
+    color: white; /* White text in the header */
+    padding: 4px; /* Padding in header cells */
+    border: 1px solid #dddddd; /* Border for header cells */
+    font-family: 'Verdana', sans-serif; /* Font for the header */
+    font-size: 16px; /* Font size for the header */
+    font-weight: bold; /* Bold font for the header */
+
+}
+            QScrollBar:vertical {
+                
+                background: #653C87;
+                
+         
+            }
+
+</string>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="midLineWidth">
+            <number>0</number>
+           </property>
+           <property name="autoScrollMargin">
+            <number>16</number>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideRight</enum>
+           </property>
+           <property name="showGrid">
+            <bool>false</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="rowCount">
+            <number>18</number>
+           </property>
+           <property name="columnCount">
+            <number>2</number>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>21</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>100</number>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>111</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>1111</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>112</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>id</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>username</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>1</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>rahul</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>2</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>akshat</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>3</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>naman</string>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string>4</string>
+            </property>
+           </item>
+           <item row="8" column="1">
+            <property name="text">
+             <string>jenih</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

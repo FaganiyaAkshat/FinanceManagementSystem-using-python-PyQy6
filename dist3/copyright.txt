@@ -1,0 +1,65 @@
+===================================================================
+                   COPYRIGHT NOTICE
+===================================================================
+
+Project Name: Kubera Financial Guardians  
+Version: 1.0.0  
+Author: Akshat Faganiya  
+Academic Year: 2024-2025  
+
+===================================================================
+
+Copyright © 2024 Akshat Faganiya. All rights reserved.
+
+===================================================================
+
+1. COPYRIGHT STATEMENT:
+This software, including all its components (source code, design, and 
+documentation), is the intellectual property of Akshat Faganiya. Any 
+unauthorized use, reproduction, or distribution of this software or any 
+portion of it may result in severe civil and criminal penalties, and 
+will be prosecuted to the maximum extent permissible under law.
+
+===================================================================
+
+2. PERMITTED USAGE:
+The software may be used for the following purposes:
+- Personal use.
+- Academic purposes related to the submission and evaluation of the project.
+- Demonstrations and presentations.
+
+===================================================================
+
+3. RESTRICTIONS:
+The following actions are strictly prohibited:
+- Reproduction, distribution, or public display of the software without 
+  explicit written permission from the author.
+- Reverse engineering, decompiling, or modifying the software in any way 
+  for unauthorized use.
+- Using the software for commercial purposes without prior consent.
+
+===================================================================
+
+4. THIRD-PARTY LIBRARIES:
+This project may utilize third-party libraries or frameworks (e.g., PyQt6, 
+SQLite, etc.). The respective licenses for these libraries apply and can be 
+found in their documentation. The author does not claim ownership of these 
+third-party components.
+
+===================================================================
+
+5. WARRANTY DISCLAIMER:
+The software is provided "AS IS," without warranty of any kind, express or 
+implied, including but not limited to the warranties of merchantability, 
+fitness for a particular purpose, and non-infringement. In no event shall 
+the author be liable for any claim, damages, or other liabilities arising 
+from the use of this software.
+
+===================================================================
+
+6. CONTACT INFORMATION:
+For permission requests or inquiries regarding this project, contact:
+- Author: Akshat Faganiya
+- Email: [your_email@example.com]
+
+===================================================================

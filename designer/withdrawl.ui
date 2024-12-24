@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>withdrawlFrame</class>
+ <widget class="QFrame" name="withdrawlFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1009</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="onewidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>616</width>
+       <height>425</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#onewidget{border:0px solid black;
+border-radius:0px;
+background:}
+QFrame:addmember{
+border:none;
+  background-color: #E6D7FA;
+}
+QLabel {
+
+    background-color: #E6D7FA;
+    color: #653C87;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  
+   
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLabel:hover {
+    background-color: #D4C2EF;  /* Slightly darker background on hover */
+    border-color: #553075;  /* Darker border on hover */
+}
+
+QLineEdit {
+    border: 2px solid #9A79BA;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #653C87;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLineEdit:hover {
+    background-color: #F5F0FA;  /* Slightly lighter background on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #653C87;  /* Darker border on focus */
+    background-color: #F5F5F5;  /* Slightly lighter background on focus */
+}
+</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>370</width>
+          <height>425</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#widget_2{
+border:2px solid black;
+border-radius:50px;
+    background-color: #E6D7FA;
+   
+}
+QLabel{
+ color: #653C87;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+border-radius:50px;
+}
+QLineEdit {
+    border: 2px solid #9A79BA;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #653C87;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+QLineEdit:hover {
+    background-color: #F5F0FA;  /* Slightly lighter background on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #653C87;  /* Darker border on focus */
+    background-color: #F5F5F5;  /* Slightly lighter background on focus */
+}
+
+</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>56</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+ border-radius:25px;
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>44</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Aadhar number</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_6">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>65</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+border:none;
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_3">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QFrame" name="frame_7">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>44</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="minimumSize">
+               <size>
+                <width>119</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Amount</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_8">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>66</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_5">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+          <widget class="QFrame" name="frame_9">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">  background-color: #E6D7FA;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="maximumSize">
+               <size>
+                <width>142</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #653C87; /* Dark purple background */
+    color: #FFFFFF; /* White text */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border: 2px solid #9A79BA; /* Light purple border */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: #9A79BA; /* Light purple background on hover */
+    border-color: #653C87; /* Dark purple border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #E6D7FA; /* Lightest purple background on press */
+    border-color: #553075; /* Darker purple border on press */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>PushButton</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color:red;</string>
+           </property>
+           <property name="text">
+            <string>Invalid Adhar number </string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>301</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>370</width>
+          <height>425</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#widget_3{
+border:2px solid black;
+border-radius:50px;
+    background-color: #E6D7FA;
+   
+}
+QLabel{
+ color: #653C87;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+border-radius:0px;
+}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QFrame" name="frame_2">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>184</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>112</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Available Balance:
+12345</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QFrame" name="frame_4">
+           <property name="maximumSize">
+            <size>
+             <width>264</width>
+             <height>128</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>112</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"> color: #653C87;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+border-radius:50px;
+</string>
+              </property>
+              <property name="text">
+               <string>Withdrawal sucessfully on you account rupees
+1244</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QFrame" name="frame_3">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>242</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+
+  background-color: #E6D7FA;
+
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

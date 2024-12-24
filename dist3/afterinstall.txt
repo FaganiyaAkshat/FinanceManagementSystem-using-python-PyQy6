@@ -1,0 +1,19 @@
+Note for First-Time Login
+When you open the application for the first time, use the following default credentials to log in:
+
+Username: admin
+Password: admin
+These credentials are pre-configured to help you set up the application initially. For security purposes, it is highly recommended to change the password after your first login.
+
+
+
+To Change the username and password please contact on +918200641807 OR akshatpatel152@gmail.com
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>917</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>17</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>244</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#widget_3{
+border:2px solid #653C87;
+border-radius:30px;
+}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>admin</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/amin_id_pass.png</normaloff>../image/amin_id_pass.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>Manage Loans</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/loan.png</normaloff>../image/loan.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>interest rate</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/change_rate.png</normaloff>../image/change_rate.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>member report</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/user_report.png</normaloff>../image/user_report.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>wating reset</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/amin_id_pass.png</normaloff>../image/amin_id_pass.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>developer</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/dev_info.png</normaloff>../image/dev_info.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+border-radius:20px;
+background-color:#9A79BA;</string>
+           </property>
+           <property name="text">
+            <string>how to use</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../image/how_to_use.png</normaloff>../image/how_to_use.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>29</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="styleSheet">
+         <string notr="true">#widget_2{
+border:2px solid #653C87;
+border-radius:30px;
+}</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_4" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>248</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#widget_4{
+border:2px solid gray;
+border-radius:50px;
+background:#9A79BA;
+}
+QLabel{
+background:#9A79BA;
+}</string>
+           </property>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>381</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>142</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+font: 900 12pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>User Name :- akhsahsjahskajh</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>100</y>
+              <width>391</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>142</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+font: 900 12pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Email :- akshatafaganiayajabajbjb@gmail.com</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>160</y>
+              <width>361</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>142</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+font: 900 12pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Password :-******************</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

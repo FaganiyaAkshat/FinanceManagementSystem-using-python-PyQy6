@@ -1,0 +1,22 @@
+ Read the following instructions carefully: before setup download.
+ ⚫ Processor: Dual-core processor (1 GHz or higher).
+ ⚫ RAM: Minimum 4 GB (8 GB recommended for smooth operation).
+ ⚫ Storage: At least 500 MB of free space for application installation.
+ ⚫ Display: Minimum resolution of 1024x768.
+ ⚫ Network: Stable internet connection (if the project requires online features).
+ ⚫ In Such a case the app does not show properly on the screen then please followed the settings .
+     ⚫ To scale the window size in Windows 11, you can follow these steps:
+            1.Right-click on the desktop and select Display settings.
+            2.In the Display settings window, scroll down to the Scale and layout section.
+            3.Under Change the size of text, apps, and other items, use the drop-down menu to select a scaling percentage that suits your preference.
+            4.If you want more precise control, click on Advanced scaling settings and enter a custom scaling size.
+            5.Click Apply to save your changes.
+        Keep in mind that some applications might need a restart to work correctly with the new scaling settings.
+     ⚫ To scale the window size in Windows 10 and another, you can follow these steps:
+            1.Right-click on the desktop and select Display settings.
+            2.In the Display settings window, scroll down to the Scale and layout section.
+            3.Under Change the size of text, apps, and other items, use the drop-down menu to select a scaling percentage (e.g., 100%, 125%, 150%, etc.).
+            4.If you need a custom scaling size, click on Advanced scaling settings, then enter a custom scale factor between 100% and 500%.
+            5.Click Apply to save your changes. Some applications may require a restart to apply the new scaling settings correctly.
+        Keep in mind that some applications might need a restart to work correctly with the new scaling settings.
+ ⚫ It is highly recommended change you scale 125% in any size of desktop if your desktop are contain 1920*1080 then show perfectly and do not change anything but is your size is some unadjusted then must be preferred to follow above information .

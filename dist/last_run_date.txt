@@ -1,0 +1,166 @@
+import pygame
+import sys
+from PyQt6 import QtWidgets, QtCore
+from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtGui import QImage, QPainter
+
+
+class KuberAnimation:
+    def __init__(self, parent=None, screen_width=800, screen_height=400):
+        self.screen_width = screen_width
+        self.screen_height = screen_height
+        self.parent = parent
+
+        # Initialize clock for frame rate control
+        self.clock = pygame.time.Clock()
+
+        self.full_text = "Kuber Firm Guardians"
+        self.text_length = len(self.full_text)
+        self.index = 0
+        self.displayed_text = [""] * self.text_length
+        self.animation_delay = 100  # Delay for letter by letter animation
+        self.time_last_update = pygame.time.get_ticks()
+
+        self.alpha = 0  # Alpha for fade-in effect
+        self.fade_speed = 5  # Speed of fade-in
+        self.zoom_factor = 1.0  # Initial zoom factor
+        self.zoom_speed = 0.01  # Speed of zoom-in effect
+        self.font_size = 70  # Initial font size
+        self.font_color = (154, 121, 186)  # #9A79BA color in RGB
+        self.font_name = 'Comic Sans MS'  # Cursive font
+        self.create_pieces()
+
+    def create_pieces(self):
+        """Create the text pieces for animation."""
+        for i, char in enumerate(self.full_text):
+            self.displayed_text[i] = ""  # Initialize all pieces as empty strings
+        print("Pieces created:", self.displayed_text)  # Debugging print
+
+    def run(self, screen):
+        """Run the animation logic (this should be called every frame)."""
+        current_time = pygame.time.get_ticks()
+
+        if current_time - self.time_last_update > self.animation_delay:
+            self.time_last_update = current_time
+            if self.index < self.text_length:
+                self.displayed_text[self.index] = self.full_text[self.index]
+                self.index += 1
+
+        screen.fill((255, 255, 255))  # Fill screen with white background
+        self.apply_zoom_effect()  # Apply zoom effect
+        self.fade_in_text()  # Apply fade-in effect
+        self.draw_text(screen)  # Draw text on screen
+
+    def apply_zoom_effect(self):
+        """Zoom-in effect after full text is shown."""
+        if self.index >= self.text_length:
+            if self.zoom_factor < 2.0:  # Set max zoom limit
+                self.zoom_factor += self.zoom_speed  # Increase zoom factor
+
+    def fade_in_text(self):
+        """Fade-in effect using alpha transparency."""
+        if self.alpha < 255:
+            self.alpha += self.fade_speed  # Increase alpha for fade-in effect
+
+    def draw_text(self, screen):
+        """Render the text on the Pygame screen with zoom and fade effects."""
+        font = pygame.font.SysFont(self.font_name, int(self.font_size * self.zoom_factor))  # Scale font size with zoom
+        text = ''.join(self.displayed_text)
+        text_surface = font.render(text, True, self.font_color)
+
+        # Apply fade effect
+        text_surface.set_alpha(self.alpha)
+
+        # Draw the text at the center of the screen
+        text_rect = text_surface.get_rect(center=(self.screen_width // 2, self.screen_height // 2))
+        screen.blit(text_surface, text_rect)
+
+
+class PygameWidget(QtWidgets.QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setAttribute(Qt.WidgetAttribute.WA_OpaquePaintEvent)
+        self.setFixedSize(800, 400)  # Adjust height to 400 as per your request
+        self.screen = None
+        self.animation = None
+        self.start_pygame()
+
+    def start_pygame(self):
+        pygame.init()  # Initialize Pygame
+        self.screen = pygame.display.set_mode((self.width(), self.height()))  # Set display mode
+
+        self.animation = KuberAnimation(self)  # Initialize animation
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self.update_animation)
+        self.timer.start(1000 // 30)  # 30 FPS
+
+    def update_animation(self):
+        """Update the animation frame."""
+        self.animation.run(self.screen)
+        self.update()
+
+    def paintEvent(self, event):
+        """Override paint event to render Pygame surface to the Qt widget."""
+        if self.screen:
+            self.blit_pygame_surface()
+
+    def blit_pygame_surface(self):
+        """Convert Pygame surface to QImage and draw it to the widget."""
+        qt_image = self.pygame_to_qimage(self.screen)
+        painter = QPainter(self)
+        painter.drawImage(0, 0, qt_image)
+        painter.end()
+
+    def pygame_to_qimage(self, surface):
+        """Convert Pygame surface to QImage."""
+        image = pygame.image.tostring(surface, "RGB")
+        qt_image = QImage(image, surface.get_width(), surface.get_height(), QImage.Format.Format_RGB888)
+        return qt_image
+
+
+class MainWindow(QtWidgets.QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Dashboard Example")
+
+        # Create the frame for the widget
+        self.frame_6 = QtWidgets.QFrame(self)
+        self.setCentralWidget(self.frame_6)
+        self.layout = QtWidgets.QVBoxLayout(self.frame_6)
+
+        # Add the Pygame widget to the layout
+        self.pygame_widget = PygameWidget(self.frame_6)
+
+        # Set right margin (e.g., 50px margin on the right)
+        self.layout.setContentsMargins(0, 0, 1500, 0)  # (left, top, right, bottom)
+
+        self.layout.addWidget(self.pygame_widget)
+        self.show()
+
+    def animation(self):
+        """This function is called to update the layout with animation content."""
+        layout = self.frame_6.layout()
+        if layout is not None:
+            while layout.count():
+                child = layout.takeAt(0)
+                if child.widget():
+                    child.widget().deleteLater()
+
+        # Add the Pygame widget for animation
+        self.content_widget = QtWidgets.QWidget()
+        self.ui_content = KuberAnimation()
+        if not self.frame_6.layout():
+            self.frame_6_layout = QtWidgets.QVBoxLayout(self.frame_6)
+            self.frame_6.setLayout(self.frame_6_layout)
+        self.frame_6.layout().addWidget(self.content_widget)
+        print("Content added to frame_6 for animation.")  # Debugging print
+
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
+
+    # Set up the main window
+    window = MainWindow()
+
+    # Run the application event loop
+    app.exec()
