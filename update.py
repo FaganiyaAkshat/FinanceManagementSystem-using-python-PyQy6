@@ -416,6 +416,59 @@ class Ui_update(object):
             new_n_name = self.lineEdit_15.text().strip()
             new_n_aadhar = self.lineEdit_16.text().strip()
 
+            if not new_username:
+                QMessageBox.warning(None, 'Validation Error', 'Username should not be empty')
+                return
+            if len(new_mobile) != 10 or not new_mobile.isdigit():
+                QMessageBox.warning(None, 'Validation Error', 'Mobile number must be 10 digits long')
+                return
+            if len(new_aadhar) != 12 or not new_aadhar.isdigit():
+                QMessageBox.warning(None, 'Validation Error', 'Aadhar number must be 12 digits long')
+                return
+            if "@gmail" not in new_email or not new_email.endswith(".com"):
+                QMessageBox.warning(None, 'Validation Error', 'Email must be a valid email')
+                return
+            if not new_n_name:
+                QMessageBox.warning(None, 'Validation Error', 'Nominee name should not be empty')
+                return
+            if not new_city:
+                QMessageBox.warning(None, 'Validation Error', 'City name should not be empty')
+                return
+            if len(new_n_aadhar) != 12 or not new_n_aadhar.isdigit():
+                QMessageBox.warning(None, 'Validation Error', 'Nominee Aadhar number must be 12 digits long')
+                return
+            if new_n_aadhar == new_aadhar:
+                QMessageBox.warning(None, 'Validation Error',
+                                    'Nominee aadhar number and account holder aadhar number should not be same ')
+                return
+
+            try:
+                con = sqlite3.connect(resource_path('db/firm_management.db'))
+                cursor = con.cursor()
+
+                # Check for existing email
+                cursor.execute("SELECT COUNT(*) FROM addmember WHERE email = ? AND userid != ?", (new_email, user_id))
+                if cursor.fetchone()[0] > 0:
+                    QMessageBox.warning(None, 'Validation Error', 'Email already exists! Try another email')
+                    return
+
+                # Check for existing mobile number
+                cursor.execute("SELECT COUNT(*) FROM addmember WHERE mobile = ? AND userid != ?", (new_mobile, user_id))
+                if cursor.fetchone()[0] > 0:
+                    QMessageBox.warning(None, 'Validation Error',
+                                        'Mobile number already exists! Try another mobile number')
+                    return
+
+                # Check for existing nominee Aadhar
+
+                cursor.execute("SELECT COUNT(*) FROM bankrupt WHERE aadhar = ?", (new_n_aadhar,))
+                result = cursor.fetchone()
+                if result[0] > 0:
+                    QMessageBox.warning(None, 'Validation Error',
+                                        'Nominee Aadhar number is already listed in bankrupt records ! not accepted')
+                    return
+            except sqlite3.Error as e:
+                QMessageBox.critical(None, 'Sorry some technical issues !', str(e))
             # Update query
             update_query = """
                         UPDATE addmember 

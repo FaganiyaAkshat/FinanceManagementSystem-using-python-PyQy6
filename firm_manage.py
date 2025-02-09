@@ -45,7 +45,7 @@ class Ui_Frame(object):
         self.widget_3.setObjectName("widget_3")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget_3)
         self.verticalLayout.setContentsMargins(-1, 9, -1, 9)
-        self.verticalLayout.setSpacing(9)
+        self.verticalLayout.setSpacing(5)
         self.verticalLayout.setObjectName("verticalLayout")
         self.pushButton = QtWidgets.QPushButton(parent=self.widget_3)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)

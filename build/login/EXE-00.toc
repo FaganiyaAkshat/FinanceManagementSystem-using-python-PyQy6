@@ -66,7 +66,7 @@
  [],
  False,
  False,
- 1734720312,
+ 1735230258,
  [('run.exe',
    'd:\\pyqt6\\pyqt6-env\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],

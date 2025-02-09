@@ -120,8 +120,8 @@ class Ui_Dashboard(object):
         self.gridLayout_4.addWidget(self.pushButton_30, 0, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_2)
         self.frame_3 = QtWidgets.QFrame(parent=self.frame)
-        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 147))
-        self.frame_3.setMinimumSize(QtCore.QSize(16777215, 130))
+        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 150))
+        self.frame_3.setMinimumSize(QtCore.QSize(16777215, 150))
         self.frame_3.setStyleSheet("border:none;\n"
                                    " border-top: 2px solid black;\n"
                                    "    background-color: white;  /* Slight color change on press */\n"

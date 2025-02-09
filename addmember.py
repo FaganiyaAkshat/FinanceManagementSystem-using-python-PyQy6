@@ -369,12 +369,12 @@ class Ui_member(object):
                                     'Mobile number already exists  ! try to use another mobile number')
                 return
 
-            cursor.execute("SELECT COUNT(*) FROM addmember WHERE nominyaadhar = ?", (n_aadhar,))
-            result = cursor.fetchone()
-            if result[0] > 0:
-                QMessageBox.warning(None, 'Validation Error',
-                                    'Nominee aadhar exists in !try to use another nominee aadhar number')
-                return
+            # cursor.execute("SELECT COUNT(*) FROM addmember WHERE nominyaadhar = ?", (n_aadhar,))
+            # result = cursor.fetchone()
+            # if result[0] > 0:
+            #     QMessageBox.warning(None, 'Validation Error',
+            #                         'Nominee aadhar exists in !try to use another nominee aadhar number')
+            #     return
 
             # Check if aadhar already exists in the table
             cursor.execute("SELECT COUNT(*) FROM addmember WHERE aadhar = ?", (aadhar,))
@@ -400,12 +400,15 @@ class Ui_member(object):
                 return
 
             # Check if nominee and user are the same
-            cursor.execute("SELECT COUNT(*) FROM addmember WHERE nominyaadhar = ?", (n_aadhar,))
-            result = cursor.fetchone()
-            if result[0] > 0:
-                QMessageBox.warning(None, 'Validation Error',
-                                    'invalid aadhar number')
-                return
+
+            # cursor.execute("SELECT COUNT(*) FROM addmember WHERE nominyaadhar = ?", (aadhar,))
+            # result = cursor.fetchone()
+            # if result[0] > 0:
+            #     QMessageBox.warning(None, 'Validation Error',
+            #                         'invalid aadhar number')
+            #     print("noimnu aadhar")
+            #
+            #     return
 
             # Generate a unique 5-digit number
             while True:
@@ -456,8 +459,11 @@ class Ui_member(object):
             self.lineEdit_16.clear()
             if self.is_internet_connected():
                 self.m_s(email, userid)
-            QMessageBox.information(None, 'Success', f'Registration successfully ! Membership Id sent on {email}')
-            con.commit()
+                QMessageBox.information(None, 'Success', f'Registration successfully ! Membership Id sent on {email}')
+                con.commit()
+            else:
+                QMessageBox.information(None, 'Success', f'Registration successfully ! Membership Id {userid})')
+                con.commit()
         except sqlite3.Error as e:  # Changed to sqlite3.Error
             print(f"Error: {e}")
 

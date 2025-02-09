@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>917</width>
-    <height>579</height>
+    <height>526</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,7 +57,7 @@ border-radius:30px;
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <property name="spacing">
-          <number>9</number>
+          <number>0</number>
          </property>
          <property name="topMargin">
           <number>9</number>
@@ -76,7 +76,7 @@ border-radius:30px;
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>40</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">

@@ -71,6 +71,8 @@ class InterestCalculationThread(QThread):
                 # Ensure funds is not None and is valid
                 if funds is None:
                     funds = Decimal(0)  # Default to 0 if funds is None
+                else:
+                    funds = Decimal(funds)  # Convert funds to Decimal if it's not already
 
                 if last_interest_date is None:
                     last_interest_date = now - timedelta(days=1)  # Default to one day ago
@@ -86,12 +88,12 @@ class InterestCalculationThread(QThread):
                     print(f"Missed intervals: {missed_intervals}")
 
                     for _ in range(missed_intervals):  # Missed days up to but not including today
-                        interest = self.calculate_interest(Decimal(funds))  # Ensure Decimal type
-                        funds += interest
+                        interest = self.calculate_interest(funds)  # Ensure Decimal type
+                        funds += interest  # Now both are Decimal types
 
                     # Update funds and last_interest_date in the database
                     update_query = "UPDATE funds SET funds = ?, last_interest_date = ? WHERE sr = ?"
-                    cursor.execute(update_query, (float(funds), now, sr))  # Ensure funds is a float
+                    cursor.execute(update_query, (float(funds), now, sr))  # Ensure funds is a float for the database
                     print(f"Updated record: sr={sr}, funds={funds}, last_interest_date={now}")
 
             con.commit()
